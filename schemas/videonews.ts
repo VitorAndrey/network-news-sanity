@@ -1,28 +1,32 @@
 const videonews = {
-  title: 'Video News',
+  title: 'Notícias com Vídeo',
   name: 'videonews',
   type: 'document',
   fields: [
     {
-      title: 'Title',
+      title: 'Título',
       name: 'title',
       type: 'string',
+      description: 'Adicione o título da matéria',
     },
     {
-      title: 'Theme',
+      title: 'Tema',
       name: 'theme',
       type: 'string',
+      description: 'Defina em uma palavra o tema da notícia',
     },
     {
-      title: 'Video',
+      title: 'Vídeo',
       name: 'video',
       type: 'file',
+      description: 'Insira um video sobre a matéria',
     },
     {
-      title: 'Content',
+      title: 'Conteúdo',
       name: 'content',
       type: 'array',
       of: [{type: 'block'}],
+      description: 'Escreva o conteúdo da notícia',
     },
   ],
 }

@@ -1,31 +1,35 @@
 const news = {
-  title: 'News',
+  title: 'Notícias',
   name: 'news',
   type: 'document',
   fields: [
     {
-      title: 'Title',
+      title: 'Título',
       name: 'title',
       type: 'string',
+      description: 'Adicione o título da matéria',
     },
     {
-      title: 'Theme',
+      title: 'Tema',
       name: 'theme',
       type: 'string',
+      description: 'Defina em uma palavra o tema da notícia',
     },
     {
-      title: 'Image',
+      title: 'Imagem',
       name: 'image',
       type: 'image',
       options: {
         hotspot: true,
       },
+      description: 'Insira uma imagem sobre a matéria',
     },
     {
-      title: 'Content',
+      title: 'Conteúdo',
       name: 'content',
       type: 'array',
       of: [{type: 'block'}],
+      description: 'Escreva o conteúdo da notícia',
     },
   ],
 }

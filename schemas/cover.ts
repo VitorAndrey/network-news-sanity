@@ -1,20 +1,22 @@
 const cover = {
-  title: 'Cover',
+  title: 'Capa',
   name: 'cover',
   type: 'document',
   fields: [
     {
-      title: 'Title',
+      title: 'Título',
       name: 'title',
       type: 'string',
+      description: 'Adicione um nome para capa',
     },
     {
-      title: 'Cover',
+      title: 'Imagem da Capa',
       name: 'cover',
       type: 'image',
       options: {
         hotspot: true,
       },
+      description: 'Adicione uma imagem de capa',
     },
   ],
 }

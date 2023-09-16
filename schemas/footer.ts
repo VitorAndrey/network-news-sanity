@@ -1,18 +1,20 @@
 const footer = {
-  title: 'Footer',
+  title: 'Rodapé',
   name: 'footer',
   type: 'document',
   fields: [
     {
-      title: 'Title',
+      title: 'Título',
       name: 'title',
       type: 'string',
+      description: 'Adicione um título para seu rodapé',
     },
     {
-      title: 'Content',
+      title: 'Conteúdo',
       name: 'content',
       type: 'array',
       of: [{type: 'block'}],
+      description: 'Adicione o conteudo do rodapé',
     },
   ],
 }

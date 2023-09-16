@@ -1,32 +1,36 @@
 const interview = {
-  title: 'Interview',
+  title: 'Entrevista',
   name: 'interview',
   type: 'document',
   fields: [
     {
-      title: 'Title',
+      title: 'Título',
       name: 'title',
       type: 'string',
+      description: 'Adicione  o título da entrevista',
     },
     {
-      title: 'Image',
+      title: 'Imagem',
       name: 'image',
       type: 'image',
       options: {
         hotspot: true,
       },
+      description: 'Adicione  uma imagem',
     },
     {
-      title: 'Content',
+      title: 'Conteúdo',
       name: 'content',
       type: 'array',
       of: [{type: 'block'}],
+      description: 'Adicione um conteúdo sobre a notícia',
     },
     {
-      title: 'Interviewees',
+      title: 'Entrevistados',
       name: 'interviewees',
       type: 'array',
       of: [{type: 'reference', to: [{type: 'interviewee'}]}],
+      description: 'Crie ou selecione entrevistados',
     },
   ],
 }
